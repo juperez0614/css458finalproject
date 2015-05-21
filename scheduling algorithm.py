@@ -7,6 +7,35 @@ import os
 import Course 
 import Teacher 
 
+
+def openTeacherData():
+    teachers = []
+    data2 = open(os.getcwd() +'/faculty7.txt', 'r')
+    individual_lines2 = data2.readlines()[4:]
+    for line in individual_lines2:
+        array = line.split("\t")
+        teachers.append(Teacher.Teacher(array))
+    return teachers
+
+
+def openCourseData():
+    courses = []
+    data = open(os.getcwd() + '/courses7.txt', 'r')
+    individual_lines = data.readlines()[8:]
+    for line in individual_lines:
+        array = N.array(line.split("\t")) 
+        if len(array) >= 4 and not array[0] == "":
+            courses.append(Course.Course(array[0:4], 'Summer'))
+        if len(array) >= 9 and not array[5] == "":
+            courses.append(Course.Course(array[5:9], 'Fall'))
+        if len(array) >= 14 and not array[10] == "":
+            courses.append(Course.Course(array[10:14], 'Winter'))  
+        if len(array) >= 17 and not array[15] == "":
+            courses.append(Course.Course(array[15:19], 'Spring'))
+    return courses
+    #courses.append(Course(line.split("\t")))
+    #print (line.split("\t")) 
+
 """checks if a instructor has the necessary credentials"""        
 def check_exp(cname, teacher):
     if (cname == '301') and "Writing" in teacher.totalexp:
@@ -23,31 +52,13 @@ def check_exp(cname, teacher):
         return True
     else:
         return False
-        
+       
 
 def run_schedule(): 
-    courses = []
-    data = open(os.getcwd() + '/courses7.txt', 'r')
-    individual_lines = data.readlines()[8:]
-    for line in individual_lines:
-        array = N.array(line.split("\t")) 
-        if len(array) >= 4 and not array[0] == "":
-            courses.append(Course.Course(array[0:4], 'Summer'))
-        if len(array) >= 9 and not array[5] == "":
-            courses.append(Course.Course(array[5:9], 'Fall'))
-        if len(array) >= 14 and not array[10] == "":
-            courses.append(Course.Course(array[10:14], 'Winter'))  
-        if len(array) >= 17 and not array[15] == "":
-            courses.append(Course.Course(array[15:19], 'Spring'))
-        #courses.append(Course(line.split("\t")))
-        #print (line.split("\t")) 
+    courses = openCourseData()
+    teachers = openTeacherData()
     
-    teachers = []
-    data2 = open(os.getcwd() +'/faculty7.txt', 'r')
-    individual_lines2 = data2.readlines()[4:]
-    for line in individual_lines2:
-        array = line.split("\t")
-        teachers.append(Teacher.Teacher(array))
+    
     R.shuffle(teachers)
     #qs = [summer, fall, winter, spring]
     #R.shuffle(qs)
@@ -110,12 +121,23 @@ for c in courses:
 """Write schedule to text file which can be converted to excel""" 
 out = open(os.getcwd() +'/schedule.txt', 'w')
 out.write('Summer Quarter \n') 
+count = 0;
+for course in courses:
+    count += 1
+    print (course.name , course.quarter)
+countSummer = 0
+for course in summer:
+    countSummer +=1
+    print (course.name, course.quarter)
+print (count, countSummer)
+
+
 for t in teachers:   
     for c in t.courses:  
         if c.quarter == 'Summer':
             out.write(c.name + "\t" + str(c.time) + "\t" + c.days + "\t" + t.name + "\n")
 for u in summer:
-    out.write(c.name + "\t" + str(c.time) + "\t" + u.days + "\t" + "Unassigned" + "\n")
+    out.write(u.name + "\t" + str(u.time) + "\t" + u.days + "\t" + "Unassigned" + "\n")
 out.write("\n")
 out.write('Fall Quarter \n')
 for t in teachers: 
@@ -123,7 +145,7 @@ for t in teachers:
         if c.quarter == 'Fall':
             out.write(c.name + "\t" + str(c.time) + "\t" + c.days + "\t" + t.name + "\n")
 for u in fall:  
-    out.write(c.name + "\t" + str(c.time) + "\t" + u.days + "\t" + "Unassigned" + "\n")       
+    out.write(u.name + "\t" + str(u.time) + "\t" + u.days + "\t" + "Unassigned" + "\n")       
 out.write("\n")
 out.write('Winter Quarter \n')
 for t in teachers: 
@@ -131,7 +153,7 @@ for t in teachers:
         if c.quarter == 'Winter':
             out.write(c.name + "\t" + str(c.time) + "\t" + c.days + "\t" + t.name + "\n")
 for u in winter:
-    out.write(c.name + "\t" + str(c.time) + "\t" + u.days + "\t" + "Unassigned" + "\n")    
+    out.write(u.name + "\t" + str(u.time) + "\t" + u.days + "\t" + "Unassigned" + "\n")    
 out.write("\n")
 out.write('Spring Quarter \n') 
 for t in teachers:
@@ -139,6 +161,6 @@ for t in teachers:
         if c.quarter == 'Spring':
             out.write(c.name + "\t" + str(c.time) + "\t" + c.days + "\t" + t.name + "\n")
 for u in spring:
-    out.write(c.name + "\t" + str(c.time) + "\t" + u.days + "\t" + "Unassigned" + "\n")
+    out.write(u.name + "\t" + str(u.time) + "\t" + u.days + "\t" + "Unassigned" + "\n")
              
 out.close()  

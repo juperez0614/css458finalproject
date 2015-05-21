@@ -53,3 +53,21 @@ class Course(object):
         start = round(start, 2)
         end = round(end, 2)
         return [start, end]
+    
+    def openData(self):
+        courses = []
+        data = open(os.getcwd() + '/courses7.txt', 'r')
+        individual_lines = data.readlines()[8:]
+        for line in individual_lines:
+            array = N.array(line.split("\t")) 
+            if len(array) >= 4 and not array[0] == "":
+                courses.append(Course.Course(array[0:4], 'Summer'))
+            if len(array) >= 9 and not array[5] == "":
+                courses.append(Course.Course(array[5:9], 'Fall'))
+            if len(array) >= 14 and not array[10] == "":
+                courses.append(Course.Course(array[10:14], 'Winter'))  
+            if len(array) >= 17 and not array[15] == "":
+                courses.append(Course.Course(array[15:19], 'Spring'))
+        return courses
+        #courses.append(Course(line.split("\t")))
+        #print (line.split("\t")) 

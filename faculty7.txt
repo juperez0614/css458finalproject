@@ -1,0 +1,32 @@
+LIST OF FACULTY						
+CSS 458 Project						
+						
+Name	Full-Time?	Number Classes	Number Students Advised	Expertise 1	Expertise 2	Expertise 3
+Anscombe	Y	7.5	2	Programming	Scientific Computing	
+Boyle	Y	5	1	Programming	Software Engineering	
+Carnesale	Y	5	1	Programming	Software Engineering	Operating Systems
+Dinkins	Y	2	3	Programming	Scientific Computing	Hardware
+Epstein	Y	7	1	Programming	Cybersecurity	
+Franklin	Y	2	3	Cybersecurity		
+Goss	Y	7	3	Cybersecurity	Software Engineering	
+Hall	Y	5	1	Writing		
+Ing	Y	4	1	Writing	Databases	
+Jenkins	Y	5	3	Hardware	Software Engineering	
+Klasse	Y	6	4	Hardware		
+Lingonberry	Y	8	3	Networking	Operating Systems	
+Marcus	Y	1	1	Networking	Software Engineering	
+Norbert	Y	4	4	Databases	Software Engineering	
+Olmeda	Y	5	4	Software Engineering	Operating Systems	
+Price	Y	3	3	Software Engineering	Hardware	
+Quine	Y	4	2	Software Engineering	Computer Engineering	
+Ralston	N	1	0	Computer Engineering	Hardware	
+Simpson	N	1	0	Teaching		
+Thomas	N	1	0	Teaching		
+Ungit	N	1.5	1	Programming	Computer Engineering	Hardware
+Veeneman	N	1	0	Programming		
+White	N	6	0	Programming	Cybersecurity	
+Xong	N	1	0	Programming	Software Engineering	
+Yttrium	N	0.5	0	Graphics	Software Engineering	
+Zelda	N	2	0	Graphics	Software Engineering	
+Zorro	N	1	1	Operating Systems	Software Engineering	
+Zane	N	1.5	2	Programming		

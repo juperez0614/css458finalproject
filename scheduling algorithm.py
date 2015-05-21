@@ -1,4 +1,4 @@
-"""This module will schedule teachers to classes. It reads text fule verisons of
+"""This module will schedule teachers to classes. It reads text file verisons of
 the excel files provided by Prof Lin"""
 
 import numpy as N
@@ -14,6 +14,7 @@ class Course(object):
         self.cap = vals[3]
         self.quarter = quarter
     
+    """this method takes a time and turns it into a comparable value"""
     def time_fix(self, time):
         #- We will need to figure out the start and end time of the class is
         start = 0
@@ -85,7 +86,13 @@ class Teacher(object):
     def addClass(self, course):
         self.courses.append(course)
         self.classes = self.classes - 1
-        
+    def yearly_sal(self):
+        if self.fulltime:
+            return 50000
+        else:
+            return 1000 * len(courses)
+
+"""checks if a instructor has the necessary credentials"""        
 def check_exp(cname, teacher):
     if cname == '301' and "Writing" in teacher.totalexp:
         return True
@@ -95,7 +102,9 @@ def check_exp(cname, teacher):
         return True
     elif cname == '421' or cname == '422' or cname == '427' or cname == '428' and "Hardware" in teacher.totalexp:
         return True
-    elif not (cname == '430' and cname == '301' and cname == '360' and cname == '421' and cname == '422' and cname == '427' and cname == '428'):
+    elif cname == '450' or cname == '451' or cname == '455' or cname == '487'or cname == '552' or cname == '587' and "Graphics" in teacher.totalexp:
+        return True
+    elif not (cname == '430' and cname == '301' and cname == '360' and cname == '421' and cname == '422' and cname == '427' and cname == '428' and cname == '450' and cname == '451' and cname == '455' and cname == '487'and cname == '552' and cname == '587'):
         return True
     else:
         return False
@@ -131,7 +140,7 @@ def run_schedule():
        
     #-First round, everyone picks up to 4 classes
     for t in teachers:
-        for i in range(0, 4):
+        for i in range(0, 1):
             if t.classes >= 1 and len(courses) >= 1:
                 t.courses.append(courses[0])
                 t.classes -= 1
@@ -141,7 +150,7 @@ def run_schedule():
     #- Second round, everyone pick another class
     for t in teachers:
         #t = teachers[i] 
-        for num in range(0, 4):
+        for num in range(0, 7):
             if len(courses) > 0 and t.classes >= 1:
                 #- for each course in summer, compare its time to each time in the prof's classes
                 i = 0
@@ -164,14 +173,7 @@ def run_schedule():
                             courses.pop(i)
                             t.classes -= 1
                         counter += 1
-                    i += 1 
-    """for t in teachers:
-        print t.name 
-        for c in t.courses: 
-            #print c.time
-            #print c.days
-            #print c.quarter
-            print t.classes"""   
+                    i += 1   
     return [teachers, courses]  
 data = run_schedule()
 courses = data[1]
@@ -189,13 +191,8 @@ for c in courses:
         winter.append(c)
     else:
         spring.append(c)
-        """
-print len(fall)
-print len(summer)
-print len(winter)
-print len(spring)
-"""
  
+"""Write schedule to text file which can be converted to excel""" 
 out = open('/Users/Will/Desktop/schedule.txt', 'w')
 out.write('Summer Quarter \n') 
 for t in teachers:   
@@ -210,11 +207,11 @@ for t in teachers:
     for c in t.courses:
         if c.quarter == 'Fall':
             out.write(c.name + "\t" + str(c.time) + "\t" + c.days + "\t" + t.name + "\n")
-for u in fall:
+for u in fall:  
     out.write(c.name + "\t" + str(c.time) + "\t" + u.days + "\t" + "Unassigned" + "\n")       
 out.write("\n")
 out.write('Winter Quarter \n')
-for t in teachers:
+for t in teachers: 
     for c in t.courses:
         if c.quarter == 'Winter':
             out.write(c.name + "\t" + str(c.time) + "\t" + c.days + "\t" + t.name + "\n")
@@ -228,5 +225,5 @@ for t in teachers:
             out.write(c.name + "\t" + str(c.time) + "\t" + c.days + "\t" + t.name + "\n")
 for u in spring:
     out.write(c.name + "\t" + str(c.time) + "\t" + u.days + "\t" + "Unassigned" + "\n")
-            
+             
 out.close()  

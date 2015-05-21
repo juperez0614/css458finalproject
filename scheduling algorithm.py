@@ -3,108 +3,23 @@ the excel files provided by Prof Lin"""
 
 import numpy as N
 import numpy.random as R  
-    
-"""This defines a course object""" 
-class Course(object):
-    def __init__(self, vals, quarter):
-        self.name = vals[0]
-        self.time = self.time_fix(vals[1])
-        self.days = str(vals[2])
-        self.instructor = None
-        self.cap = vals[3]
-        self.quarter = quarter
-    
-    """this method takes a time and turns it into a comparable value"""
-    def time_fix(self, time):
-        #- We will need to figure out the start and end time of the class is
-        start = 0
-        end = 0
-        split_dash = time.split("-")
-        if len(split_dash) == 1:
-            split_col = split_dash[0].split(":")  
-            #print (int(split_col[0]))
-            if split_col[0] == "":
-                start = 0.0
-            else:
-                start = int(split_col[0]) + int(split_col[1])/60.0
-                end = start + 2.0
-                if start < 8:
-                    start = start + 12.0
-                    end = end + 12.0
-                elif end < start:
-                    end = end + 12.0
-        else:
-            split_d1 = split_dash[0]
-            split_d2 = split_dash[1]
-            split_col1 = split_d1.split(":")
-            split_col2 = split_d2.split(":")
-            #print (split_col1)
-            #print (split_col2)
-            if split_col1[0] == "":
-                start = 0.00
-            elif len(split_col1) == 2:
-                start = int(split_col1[0]) + float(split_col1[1])/60.0
-            else:
-                start = int(split_col1[0])  
-            if split_col2[0] == "":
-                end = 0.00 
-            elif len(split_col2) == 2:
-                end = int(split_col2[0]) +  float(split_col2[1])/60.0
-            else:
-                end = int(split_col2[0])
-                if start < 8:
-                    start = start + 12.0
-                    end = end + 12.0
-                elif end < start:
-                    end = end + 12.0
-        start = round(start, 2)
-        end = round(end, 2)
-        return [start, end]
-
-"""This defines a teacher object"""
-class Teacher(object):
-    def __init__(self, vals):
-        self.name = vals[0]
-        if vals[1] == "Y":
-            self.fulltime = True
-        else:
-            self.fulltime = False
-        self.classes = float(vals[2])
-        self.stud_adv = float(vals[3])
-        self.exp = [] 
-        self.exp.append(vals[4])
-        self.exp.append(vals[5]) 
-        self.exp.append(vals[6])
-        self.totalexp = self.exp[0] + "," + self.exp[1] + "," + self.exp[2]
-        self.satisfaction = 100
-        
-        self.summer = []
-        self.fall = []
-        self.winter = []
-        self.spring = []
-        self.courses = []
-    def addClass(self, course):
-        self.courses.append(course)
-        self.classes = self.classes - 1
-    def yearly_sal(self):
-        if self.fulltime:
-            return 50000
-        else:
-            return 1000 * len(courses)
+import os
+import Course 
+import Teacher 
 
 """checks if a instructor has the necessary credentials"""        
 def check_exp(cname, teacher):
-    if cname == '301' and "Writing" in teacher.totalexp:
+    if (cname == '301') and "Writing" in teacher.totalexp:
         return True
-    elif cname == '360' and "Software Engineering" in teacher.totalexp:
+    elif (cname == '360') and "Software Engineering" in teacher.totalexp:
         return True
-    elif cname == '430' and "Operating Systems" in teacher.totalexp:
+    elif (cname == '430') and "Operating Systems" in teacher.totalexp:
         return True
-    elif cname == '421' or cname == '422' or cname == '427' or cname == '428' and "Hardware" in teacher.totalexp:
+    elif (cname == '421' or cname == '422' or cname == '427' or cname == '428') and "Hardware" in teacher.totalexp:
         return True
-    elif cname == '450' or cname == '451' or cname == '455' or cname == '487'or cname == '552' or cname == '587' and "Graphics" in teacher.totalexp:
+    elif (cname == '450' or cname == '451' or cname == '455' or cname == '487'or cname == '552' or cname == '587') and "Graphics" in teacher.totalexp:
         return True
-    elif not (cname == '430' and cname == '301' and cname == '360' and cname == '421' and cname == '422' and cname == '427' and cname == '428' and cname == '450' and cname == '451' and cname == '455' and cname == '487'and cname == '552' and cname == '587'):
+    elif not (cname == '430' or cname == '301' or cname == '360' or cname == '421' or cname == '422' or cname == '427' or cname == '428' or cname == '450' or cname == '451' or cname == '455' or cname == '487'and cname == '552' and cname == '587'):
         return True
     else:
         return False
@@ -112,27 +27,27 @@ def check_exp(cname, teacher):
 
 def run_schedule(): 
     courses = []
-    data = open('/Users/Will/Desktop/courses7.txt', 'r')
+    data = open(os.getcwd() + '/courses7.txt', 'r')
     individual_lines = data.readlines()[8:]
     for line in individual_lines:
         array = N.array(line.split("\t")) 
         if len(array) >= 4 and not array[0] == "":
-            courses.append(Course(array[0:4], 'Summer'))
+            courses.append(Course.Course(array[0:4], 'Summer'))
         if len(array) >= 9 and not array[5] == "":
-            courses.append(Course(array[5:9], 'Fall'))
+            courses.append(Course.Course(array[5:9], 'Fall'))
         if len(array) >= 14 and not array[10] == "":
-            courses.append(Course(array[10:14], 'Winter'))  
+            courses.append(Course.Course(array[10:14], 'Winter'))  
         if len(array) >= 17 and not array[15] == "":
-            courses.append(Course(array[15:19], 'Spring'))
+            courses.append(Course.Course(array[15:19], 'Spring'))
         #courses.append(Course(line.split("\t")))
         #print (line.split("\t")) 
     
     teachers = []
-    data2 = open('/Users/Will/Desktop/faculty7.txt', 'r')
+    data2 = open(os.getcwd() +'/faculty7.txt', 'r')
     individual_lines2 = data2.readlines()[4:]
     for line in individual_lines2:
         array = line.split("\t")
-        teachers.append(Teacher(array))
+        teachers.append(Teacher.Teacher(array))
     R.shuffle(teachers)
     #qs = [summer, fall, winter, spring]
     #R.shuffle(qs)
@@ -193,7 +108,7 @@ for c in courses:
         spring.append(c)
  
 """Write schedule to text file which can be converted to excel""" 
-out = open('/Users/Will/Desktop/schedule.txt', 'w')
+out = open(os.getcwd() +'/schedule.txt', 'w')
 out.write('Summer Quarter \n') 
 for t in teachers:   
     for c in t.courses:  

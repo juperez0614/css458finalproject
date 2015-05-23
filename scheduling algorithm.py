@@ -57,7 +57,8 @@ def check_exp(cname, teacher):
 def run_schedule(): 
     courses = openCourseData()
     teachers = openTeacherData()
-    
+    print("The number of course: ",len(courses))
+    print("The number of teachers: ",len(teachers))
     
     R.shuffle(teachers)
     #qs = [summer, fall, winter, spring]
@@ -102,6 +103,8 @@ def run_schedule():
                     i += 1   
     return [teachers, courses]  
 data = run_schedule()
+coursesFull = openCourseData()
+teachersFull = openTeacherData()
 courses = data[1]
 teachers = data[0]
 fall = []
@@ -124,12 +127,18 @@ out.write('Summer Quarter \n')
 count = 0;
 for course in courses:
     count += 1
-    print (course.name , course.quarter)
+    #print (course.name , course.quarter)
 countSummer = 0
-for course in summer:
+
+"""for course in summer:
     countSummer +=1
     print (course.name, course.quarter)
-print (count, countSummer)
+print (count, countSummer)"""
+print("Number of unassigned classes: ", len(courses))
+print("Needed Full Time Employees: ", int(len(courses)/8))
+print("Total Cost of Year: ", (int(len(courses)/8)) * 90000)
+print("Total Projected Revenue of Year: ", int(len(coursesFull)) * 5 * 358.00 * 30) #2/3 class full of students
+print ("Total Possible Profit: ", (int(len(coursesFull)) * 5 * 358.00 * 30) - ((int(len(courses)/8)) * 90000))
 
 
 for t in teachers:   

@@ -1,0 +1,200 @@
+Summer Quarter 
+499	[0.0, 0]		Lingonberry
+475	[6.0, 8.33]	M	White
+430	[11.75, 2.08]	MW	White
+490	[6.0, 8.33]	M/W	White
+590	[6.0, 8.33]	T/Th	Quine
+SKL162	[6.0, 8.5]	Tu	Klasse
+SKL161	[2.5, 5.0]	Tu	Olmeda
+497	[0.0, 0]		Unassigned
+495	[0.0, 0]		Unassigned
+162	[6.0, 8.33]	M/W	Unassigned
+498	[0.0, 0]		Unassigned
+161	[2.5, 4.83]	M/W	Unassigned
+301	[9.0, 11.33]	MW	Unassigned
+
+Fall Quarter 
+301A,D	[11.0, 13.0]	T/TH	Ralston
+422B	[15.5, 17.5]	T/Th	Norbert
+501B	[6, 7.67]	T/TH	Xong
+474	[17.75, 19.75]	T/Th	Lingonberry
+490C	[8.0, 10.0]	T/Th	Lingonberry
+430 A	[15.5, 17.5]	M/W	Lingonberry
+162A	[13.25, 15.25]	T/Th	Quine
+342B	[8.0, 10.0]	M/W	Jenkins
+572	[8.0, 10.0]	T/TH	Jenkins
+383	[13.0, 15.0]	F	Boyle
+161B	[13.25, 15.25]	M/W	Boyle
+506B	[8.0, 10.0]	T	Boyle
+515	[8.0, 10.0]	T	Boyle
+350	[15.5, 17.5]	T/Th	Hall
+475	[17.75, 19.75]	M/W	Hall
+SKL162B	[3.5, 6.0]	Tu	Epstein
+590	[0.0, 0]		Epstein
+360C	[15.5, 17.5]	T/Th	Epstein
+301B	[17.75, 19.75]	T/Th	Zelda
+342A	[17.75, 19.75]	M/W	Carnesale
+SKL509	[8.0, 10.0]	Th	Carnesale
+310	[8.0, 10.0]	M/W	Anscombe
+161A	[11.0, 13.0]	M/W	Dinkins
+341	[13.25, 15.25]	T/Th	Ing
+490D	[17.75, 19.75]	TTh	Klasse
+360B	[17.75, 19.75]	T/Th	Klasse
+SKL162A	[2.5, 5.0]	F	Goss
+506A	[8.0, 10.0]	M	Goss
+162B	[17.75, 19.75]	T/Th	Olmeda
+490A(4)	[15.5, 17.5]	M/W	Olmeda
+BCUSP161	[8.75, 10.75]	T/Th	Olmeda
+370	[17.75, 19.75]	M/W	Marcus
+499	[0.0, 0]		Unassigned
+499	[0.0, 0]		Unassigned
+332	[1.25, 5.25]	F	Unassigned
+590(14)	[17.75, 19.75]	T/TH	Unassigned
+455	[15.5, 17.5]	T/Th	Unassigned
+490B	[8.0, 10.0]	M/W	Unassigned
+360A	[13.25, 15.25]	M/W	Unassigned
+533	[17.75, 19.75]	T/TH	Unassigned
+527	[8.0, 10.0]	M/W	Unassigned
+343A	[15.5, 17.5]	M/W	Unassigned
+501A	[6, 7.67]	M/W	Unassigned
+371	[17.75, 19.75]	T/Th	Unassigned
+295	[13.25, 15.25]	W	Unassigned
+107	[8.75, 10.75]	T/Th	Unassigned
+457	[11.0, 13.0]	M/W	Unassigned
+301C	[17.75, 19.75]	T/Th	Unassigned
+SKL161A	[8.75, 11.25]	F	Unassigned
+422A	[15.5, 17.5]	M/W	Unassigned
+205/405	[4.25, 5.08]	Tu	Unassigned
+579	[17.75, 19.75]	M/W	Unassigned
+SKL161B	[11.5, 2.0]	F	Unassigned
+517	[17.75, 19.75]	M/W	Unassigned
+498	[0.0, 0]		Unassigned
+497	[0.0, 0]		Unassigned
+
+Winter Quarter 
+161B	[11.0, 13.0]	M/W	Norbert
+507A	[8.0, 10.0]	M	Lingonberry
+577	[17.75, 19.75]	T/Th	Franklin
+107	[13.25, 15.25]	T/Th	Franklin
+370B	[17.75, 19.75]	T/Th	White
+421	[17.75, 19.75]	T/Th	Quine
+205/405	[3.5, 4.33]	M	Quine
+SKL509	[8.0, 10.0]	T	Jenkins
+SKL161B	[11.5, 2.0]	F	Jenkins
+427A	[17.75, 19.75]	M/W	Boyle
+502A	[6, 7.67]	M/W	Ungit
+332	[1.25, 5.25]	F	Hall
+451	[15.5, 17.5]	T/Th	Hall
+350B	[13.25, 15.25]	T/Th	Epstein
+211	[15.5, 17.5]	M/W	Epstein
+565	[17.75, 19.75]	T/TH	Epstein
+162B	[17.75, 19.75]	M/W	Zelda
+301C	[8.75, 10.75]	M/W	Carnesale
+162A	[11.0, 13.0]	T/Th	Carnesale
+SKL162B	[5.75, 8.25]	Tu	Anscombe
+427B	[17.75, 19.75]	M/W	Anscombe
+498	[0.0, 0]		Anscombe
+370A	[13.25, 15.25]	M/W	Anscombe
+427B Lab	[2.5, 5.5]	F	Dinkins
+473	[17.75, 19.75]	T/Th	Ing
+342B	[8.0, 10.0]	M/W	Ing
+499	[0.0, 0]		Ing
+301B	[13.25, 15.25]	T/Th	Klasse
+555	[17.75, 19.75]	M/W	Klasse
+490A(8)	[11.0, 13.0]	T/TH	Goss
+502B	[6, 7.67]	T/TH	Goss
+430	[15.5, 17.5]	M/W	Goss
+SKL161C	[11.5, 2.0]	F	Goss
+301A	[13.25, 15.25]	T/Th	Price
+507B	[8.0, 10.0]	T	Price
+161A	[15.5, 17.5]	M/W	Unassigned
+295	[13.25, 15.25]	W	Unassigned
+SKL162A	[2.25, 4.75]	F	Unassigned
+SKL510	[8.0, 10.0]	Th	Unassigned
+360A	[15.5, 17.5]	T/Th	Unassigned
+499	[0.0, 0]		Unassigned
+595	[0.0, 0]		Unassigned
+343B	[8.0, 10.0]	M/W	Unassigned
+490B(9)	[8.0, 10.0]	M/W	Unassigned
+537	[8.0, 10.0]	T/Th	Unassigned
+514	[8.0, 10.0]	W	Unassigned
+337	[17.75, 19.75]	M/W	Unassigned
+BCUSP161	[8.75, 10.75]	T/Th	Unassigned
+350A	[15.5, 17.5]	T/Th	Unassigned
+538	[17.75, 19.75]	M/W	Unassigned
+432	[17.75, 19.75]	T/Th	Unassigned
+161C	[8.75, 10.75]	M/W	Unassigned
+552	[8.0, 10.0]	M/W	Unassigned
+475	[13.25, 15.25]	M/W	Unassigned
+422	[15.5, 17.5]	T/Th	Unassigned
+SKL161A	[8.75, 11.25]	F	Unassigned
+360B	[17.75, 19.75]	T/Th	Unassigned
+342A	[17.75, 19.75]	M/W	Unassigned
+343A	[15.5, 17.5]	M/W	Unassigned
+593	[0.0, 0]		Unassigned
+427A Lab	[2.5, 5.5]	F	Unassigned
+497	[0.0, 0]		Unassigned
+290	[15.5, 17.5]	W	Unassigned
+
+Spring Quarter 
+161A	[11.0, 13.0]	M/W	Zorro
+161B	[15.5, 17.5]	M/W	Norbert
+432	[17.75, 19.75]	T/Th	Norbert
+370A	[15.5, 17.5]	T/Th	Lingonberry
+499	[0.0, 0]		Lingonberry
+225	[15.5, 17.5]	T/Th	Lingonberry
+SKL161A	[8.75, 11.25]	F	White
+595	[0.0, 0]		White
+SKL162A	[2.25, 4.75]	F	Veeneman
+539	[8.0, 10.0]	M/W	Jenkins
+430A	[8.0, 10.0]	M/W	Hall
+593	[0.0, 0]		Epstein
+415	[15.5, 17.5]	TTh	Carnesale
+360A	[17.75, 19.75]	M/W	Anscombe
+430B	[13.25, 15.25]	T/Th	Anscombe
+498	[0.0, 0]		Thomas
+SKL509	[8.0, 10.0]	T	Simpson
+342A	[15.5, 17.5]	M/W	Klasse
+SKL162B	[5.75, 8.25]	Th	Goss
+503A	[6, 7.67]	M/W	Price
+107	[13.25, 15.25]	T/Th	Zane
+162B	[17.75, 19.75]	M/W	Olmeda
+490B	[15.5, 17.5]	M/W	Unassigned
+496	[17.75, 19.75]	M/W	Unassigned
+578	[8.0, 10.0]	T/Th	Unassigned
+480	[17.75, 19.75]	M/W	Unassigned
+205/405	[1.25, 2.08]	Th	Unassigned
+422B	[13.25, 15.25]	T/Th	Unassigned
+301B	[15.5, 17.5]	T/Th	Unassigned
+458	[8.0, 10.0]	M/W	Unassigned
+343A	[15.5, 17.5]	M/W	Unassigned
+332	[1.25, 5.25]	F	Unassigned
+SKL510	[8.0, 10.0]	Th	Unassigned
+508B	[8.0, 10.0]	T	Unassigned
+566	[8.0, 10.0]	M/W	Unassigned
+SKL161C	[5.75, 8.25]	Tu	Unassigned
+422A	[17.75, 19.75]	M/W	Unassigned
+519	[17.75, 19.75]	T/Th	Unassigned
+434	[15.5, 17.5]	M/W	Unassigned
+385	[15.5, 17.5]	T/Th	Unassigned
+503B	[6, 7.67]	T/TH	Unassigned
+301A	[13.25, 15.25]	T/Th	Unassigned
+508A	[8.0, 10.0]	M	Unassigned
+295	[13.25, 15.25]	W	Unassigned
+162A	[13.25, 15.25]	M/W	Unassigned
+371	[17.75, 19.75]	T/Th	Unassigned
+428 Lab	[2.5, 5.5]	F	Unassigned
+411	[13.25, 15.25]	M/W	Unassigned
+499	[0.0, 0]		Unassigned
+342B	[8.0, 10.0]	T/TH	Unassigned
+350A	[17.75, 19.75]	T/Th	Unassigned
+428 (6)	[17.75, 19.75]	M/W	Unassigned
+590(10)	[17.75, 19.75]	T/TH	Unassigned
+161C	[8.0, 10.0]	M/W	Unassigned
+490A	[13.25, 15.25]	M/W	Unassigned
+SKL161B	[11.5, 2.0]	F	Unassigned
+553	[17.75, 19.75]	M/W	Unassigned
+475	[15.5, 17.5]	M/W	Unassigned
+448	[8.0, 10.0]	T/Th	Unassigned
+497	[0.0, 0]		Unassigned
+BCUSP161	[8.75, 10.75]	T/Th	Unassigned

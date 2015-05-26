@@ -4,4 +4,7 @@ class AbstractCourse(object):
         self.ind_courses = [course]
     
     def add(self, course):
-        self.ind_courses.append(course)
+        self.ind_courses.append(course) 
+    
+    def remove(self, course):
+        self.ind_courses.remove(course)   

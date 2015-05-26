@@ -24,25 +24,37 @@ class Course(object):
     def deconstruct_name(self, name):
         """Pre :  A name stirng read from the excel data is passed
         Post :  A list with [title, Section] is returned""" 
-        if len(name) == 3:
+        if "205/40" in name:
             return [name, None]
-        elif len(name) == 4:
-            return [name[0:3], name[3]]
-        elif "SKL" in name:
-            if len(name) == 7:
-                return [name[-4:-1] + "Lab", name[-1]]
-            else:
-                return [name[-3:] + "Lab", None]
-        elif "BCUSP" in name:
-            if len(name)== 9:
-                return [name[-4:], None]
-            else:
-                return [name[-5:-1], name[-1]]
-        else:   
-            return  [name[-5:-1], name[-1]] 
+        else:
+            if len(name) == 3:
+                return [name, None]
+            elif len(name) == 4:
+                return [name[0:3], name[3]]
+            elif "SKL" in name:
+                if len(name) == 7:
+                    return [name[-4:-1] + "Lab", name[-1]]
+                else:
+                    return [name[-3:] + "Lab", None]
+            elif "BCUSP" in name:
+                if len(name)== 9:
+                    return [name[-4:], None]
+                else:
+                    return [name[-5:-1], name[-1]]
+            else:   
+                return  [name[-5:-1], name[-1]] 
 
 
     def has_conflict_with(self, other):
         """Uses time objects to see if courses have time conflicts
         """
         return self.time.has_conflict_with(other.time)
+    
+    def openData():
+        data = open(os.getcwd() + '/courses.txt', 'r')
+        individual_lines = data.readlines()
+        cruncher = CourseCruncher()
+        for line in individual_lines:
+            course = Course(line.split("\t")) 
+            cruncher.add(course)
+        return cruncher

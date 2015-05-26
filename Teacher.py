@@ -1,7 +1,8 @@
 """This defines a teacher object"""
 import os
-
+import CourseCruncher
 class Teacher(object):
+    
     def __init__(self, vals):
         self.name = vals[0]
         if vals[1] == "Y":
@@ -31,17 +32,17 @@ class Teacher(object):
         
     def yearly_sal(self):
         if self.fulltime:
-            return 50000
+            return 85000
         else:
             return 1000 * len(courses)
     
-    def openData():
-        teachers = []
-        data2 = open(os.getcwd() +'/faculty7.txt', 'r')
-        individual_lines2 = data2.readlines()[4:]
-        for line in individual_lines2:
-            array = line.split("\t")
-            teachers.append(Teacher.Teacher(array))
-        return teachers
+def openData():
+    teachers = []
+    data2 = open(os.getcwd() +'/faculty7.txt', 'r')
+    individual_lines2 = data2.readlines()[4:]
+    for line in individual_lines2:
+        array = line.split("\t")
+        teachers.append(Teacher(array))
+    return teachers
         
     

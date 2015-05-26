@@ -6,84 +6,52 @@ import numpy.random as R
 import os
 import Course 
 import Teacher 
+import AbstractCourse
 
 
-def openTeacherData():
-    teachers = []
-    data2 = open(os.getcwd() +'/faculty7.txt', 'r')
-    individual_lines2 = data2.readlines()[4:]
-    for line in individual_lines2:
-        array = line.split("\t")
-        teachers.append(Teacher.Teacher(array))
-    return teachers
-
-
-def openCourseData():
-    courses = []
-    data = open(os.getcwd() + '/courses7.txt', 'r')
-    individual_lines = data.readlines()[8:]
-    for line in individual_lines:
-        array = N.array(line.split("\t")) 
-        if len(array) >= 4 and not array[0] == "":
-            courses.append(Course.Course(array[0:4], 'Summer'))
-        if len(array) >= 9 and not array[5] == "":
-            courses.append(Course.Course(array[5:9], 'Fall'))
-        if len(array) >= 14 and not array[10] == "":
-            courses.append(Course.Course(array[10:14], 'Winter'))  
-        if len(array) >= 17 and not array[15] == "":
-            courses.append(Course.Course(array[15:19], 'Spring'))
-    return courses
     #courses.append(Course(line.split("\t")))
     #print (line.split("\t")) 
 
-"""checks if a instructor has the necessary credentials"""        
-def check_exp(cname, teacher):
-    if (cname == '301') and "Writing" in teacher.totalexp:
-        return True
-    elif (cname == '360') and "Software Engineering" in teacher.totalexp:
-        return True
-    elif (cname == '430') and "Operating Systems" in teacher.totalexp:
-        return True
-    elif (cname == '421' or cname == '422' or cname == '427' or cname == '428') and "Hardware" in teacher.totalexp:
-        return True
-    elif (cname == '450' or cname == '451' or cname == '455' or cname == '487'or cname == '552' or cname == '587') and "Graphics" in teacher.totalexp:
-        return True
-    elif not (cname == '430' or cname == '301' or cname == '360' or cname == '421' or cname == '422' or cname == '427' or cname == '428' or cname == '450' or cname == '451' or cname == '455' or cname == '487'and cname == '552' and cname == '587'):
-        return True
-    else:
-        return False
-       
 
+'''
+Teachers Retiring/ quiting
+Random population growth (1% - 20%) Normal Distribution
+Teacher Class Rejection Rate (1% - 10%)
+keeping timeslots together
+'''
 def run_schedule(): 
-    courses = openCourseData()
-    teachers = openTeacherData()
-    print("The number of course: ",len(courses))
+
+    courses = []
+    teachers = []
+    courses = Course.openData()
+    teachers = Teacher.openData()
+    print("The number of course: ",len(courses.courses))
     print("The number of teachers: ",len(teachers))
     
     R.shuffle(teachers)
     #qs = [summer, fall, winter, spring]
     #R.shuffle(qs)
-    R.shuffle(courses)   
+    R.shuffle(courses.courses)   
        
     #-First round, everyone picks up to 4 classes
     for t in teachers:
         for i in range(0, 1):
-            if t.classes >= 1 and len(courses) >= 1:
-                t.courses.append(courses[0])
+            if t.classes >= 1 and len(courses.courses) >= 1:
+                t.courses.append(courses.courses[0])
                 t.classes -= 1
-                courses.pop(0)
+                courses.courses.pop(0)
     #print len(courses)
             
     #- Second round, everyone pick another class
     for t in teachers:
         #t = teachers[i] 
         for num in range(0, 7):
-            if len(courses) > 0 and t.classes >= 1:
+            if len(courses.courses) > 0 and t.classes >= 1:
                 #- for each course in summer, compare its time to each time in the prof's classes
                 i = 0
                 added = False 
-                while i < len(courses) and not added:
-                    c = courses[i]
+                while i < len(courses.courses) and not added:
+                    c = courses.courses[i]
                     ctime = c.time
                     cdays = c.days
                     cq = c.quarter

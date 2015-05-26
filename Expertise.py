@@ -1,3 +1,6 @@
+from AbstractCourse import AbstractCourse
+
+
 class Expertise(object):
     def __init__(self, expertise, course):
         self.expertise = expertise

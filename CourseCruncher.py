@@ -1,3 +1,6 @@
+from Expertise import Expertise
+from AbstractCourse import AbstractCourse
+
 class CourseCruncher(object):
     def __init__(self):
         self.expertises = [] 
@@ -57,11 +60,11 @@ class CourseCruncher(object):
         
     def print_abstract(self):
         for course in self.abstract_courses:
-            print course.name
+            print (course.name)
     
     def print_expertise(self):
         for exp in self.expertises:
-            print exp.expertise
+            print (exp.expertise)
         
 def openData():
     #data = open(os.getcwd() + '/courses.txt', 'r')

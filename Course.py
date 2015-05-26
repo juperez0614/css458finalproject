@@ -1,3 +1,7 @@
+import os
+from CourseCruncher import CourseCruncher
+from Expertise import Expertise
+
 """This is the individual course object, ie: a specific course. It
 stores the following
     +- title (509, 161, 162, 360, etc), string * 'L' is added to end
@@ -50,11 +54,11 @@ class Course(object):
         """
         return self.time.has_conflict_with(other.time)
     
-    def openData():
-        data = open(os.getcwd() + '/courses.txt', 'r')
-        individual_lines = data.readlines()
-        cruncher = CourseCruncher()
-        for line in individual_lines:
-            course = Course(line.split("\t")) 
-            cruncher.add(course)
-        return cruncher
+def openData():
+    data = open(os.getcwd() + '/courses.txt', 'r')
+    individual_lines = data.readlines()
+    cruncher = CourseCruncher()
+    for line in individual_lines:
+        course = Course(line.split("\t")) 
+        cruncher.add(course)
+    return cruncher

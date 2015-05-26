@@ -4,7 +4,7 @@ stores the following
     if the course is a lab
     +- section (A, B etc) , string
     +- name = [title, section]
-    +- expertise - string 
+    +- expertise - string   
     +- time - a Time Object
     
 *** When comparing time conflicts between courses YOU DO NOT have to
@@ -46,12 +46,3 @@ class Course(object):
         """Uses time objects to see if courses have time conflicts
         """
         return self.time.has_conflict_with(other.time)
-    
-    def openData():
-        data = open(os.getcwd() + '/courses.txt', 'r')
-        individual_lines = data.readlines()
-        cruncher = CourseCruncher()
-        for line in individual_lines:
-            course = Course(line.split(","))
-            cruncher.add(course)
-        return cruncher

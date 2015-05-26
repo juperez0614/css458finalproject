@@ -1,201 +1,238 @@
-107,8:45,T/Th,45,Autumn,Programming
-107,1:15,T/Th,45,Winter,Programming
-107,1:15,T/Th,45,Spring,Programming
-161,2:30-4:50,M/W,30,Summer,Programming
-162,6:00-8:20,M/W,30,Summer,Programming
-211,3:30,M/W,45,Winter,Teaching
-225,3:30,T/Th,30,Spring,Hardware
-290,3:30,W,10,Winter,Teaching
-295,1:15,W,10,Autumn,Teaching
-295,1:15,W,10,Winter,Teaching
-295,1:15,W,10,Spring,Teaching
-301,9:00-11:20,MW,30,Summer,Writing
-310,8:00,M/W,45,Autumn,Cybersecurity
-332,1:15-5:15,F,90,Autumn,Programming
-332,1:15-5:15,F,90,Winter,Programming
-332,1:15-5:15,F,90,Spring,Programming
-337,5:45,M/W,45,Winter,Cybersecurity
-341,1:15,T/Th,45,Autumn,Programming
-350,3:30,T/Th,60,Autumn,Software Engineering
-370,5:45,M/W,60,Autumn,Software Engineering
-371,5:45,T/Th,45,Autumn,Teaching
-371,5:45,T/Th,45,Spring,Teaching
-383,3-Jan,F,45,Autumn,Databases
-385,3:30,T/Th,45,Spring,Programming
-411,1:15,M/W,45,Spring,Teaching
-415,3:30,TTh,45,Spring,Cybersecurity
-421,5:45,T/Th,20,Winter,Hardware
-422,3:30,T/Th,45,Winter,Hardware
-430,11:45-2:05,MW,10,Summer,Operating Systems
-430,3:30,M/W,60,Winter,Operating Systems
-432,5:45,T/Th,45,Winter,Networking
-432,5:45,T/Th,45,Spring,Networking
-434,3:30,M/W,45,Spring,Programming
-448,8:00,T/Th,45,Spring,Programming
-451,3:30,T/Th,45,Winter,Graphics
-455,3:30,T/Th,45,Autumn,Scientific Computing
-457,11:00,M/W,45,Autumn,Programming
-458,8:00,M/W,45,Spring,Scientific Computing
-473,5:45,T/Th,45,Winter,Teaching
-474,5:45,T/Th,45,Autumn,Software Engineering
-475,6:00-8:20,M,60,Summer,Databases
-475,5:45,M/W,45,Autumn,Databases
-475,1:15,M/W,45,Winter,Databases
-475,3:30,M/W,45,Spring,Databases
-480,5:45,M/W,45,Spring,Software Engineering
-490,6:00-8:20,M/W,45,Summer,Capstone
-495,,,,Summer,Capstone
-496,5:45,M/W,10,Spring,Capstone
-497,,,,Summer,Capstone
-497,,,,Autumn,Capstone
-497,,,,Winter,Capstone
-497,,,,Spring,Capstone
-498,,,,Summer,Capstone
-498,,,,Autumn,Capstone
-498,,,,Winter,Capstone
-498,,,,Spring,Capstone
-499,,,,Summer,Capstone
-499,,,,Autumn,Capstone
-499,,,,Autumn,Capstone
-499,,,,Winter,Capstone
-499,,,,Winter,Capstone
-499,,,,Spring,Capstone
-499,,,,Spring,Capstone
-514,8:00,W,30,Winter,Cybersecurity
-515,8:00,T,30,Autumn,Cybersecurity
-517,5:45,M/W,30,Autumn,Software Engineering
-519,5:45,T/Th,30,Spring,Software Engineering
-527,8:00,M/W,30,Autumn,Cybersecurity
-533,5:45,T/TH,30,Autumn,Programming
-537,8:00,T/Th,30,Winter,Cybersecurity
-538,5:45,M/W,30,Winter,Cybersecurity
-539,8:00,M/W,30,Spring,Cybersecurity
-552,8:00,M/W,30,Winter,Graphics
-553,5:45,M/W,30,Spring,Software Engineering
-555,5:45,M/W,30,Winter,Software Engineering
-565,5:45,T/TH,30,Winter,Software Engineering
-566,8:00,M/W,30,Spring,Software Engineering
-572,8:00,T/TH,30,Autumn,Software Engineering
-577,5:45,T/Th,30,Winter,Software Engineering
-578,8:00,T/Th,30,Spring,Cybersecurity
-579,5:45,M/W,30,Autumn,Cybersecurity
-590,6:00-8:20,T/Th,30,Summer,Capstone
-590,,,,Autumn,Capstone
-593,,,,Winter,Capstone
-593,,,,Spring,Capstone
-595,,,,Winter,Capstone
-595,,,,Spring,Capstone
-161A,11:00,M/W,45,Autumn,Programming
-161A,3:30,M/W,45,Winter,Programming
-161A,11:00,M/W,45,Spring,Programming
-161B,1:15,M/W,45,Autumn,Programming
-161B,11:00,M/W,45,Winter,Programming
-161B,3:30,M/W,45,Spring,Programming
-161C,8:45,M/W,45,Winter,Programming
-161C,8:00,M/W,45,Spring,Programming
-162A,1:15,T/Th,45,Autumn,Programming
-162A,11:00,T/Th,45,Winter,Programming
-162A,1:15,M/W,45,Spring,Programming
-162B,5:45,T/Th,45,Autumn,Programming
-162B,5:45,M/W,45,Winter,Programming
-162B,5:45,M/W,45,Spring,Programming
-205/405,4:15-5:05,Tu,20,Autumn,Teaching
-205/405,3:30-4:20,M,20,Winter,Teaching
-205/405,1:15-2:05,Th,20,Spring,Teaching
-301A,1:15,T/Th,30,Winter,Writing
-301A,1:15,T/Th,30,Spring,Writing
-301D,11:00,T/TH,60,Autumn,Writing
-301B,5:45,T/Th,30,Autumn,Writing
-301B,1:15,T/Th,30,Winter,Writing
-301B,3:30,T/Th,30,Spring,Writing
-301C,5:45,T/Th,30,Autumn,Writing
-301C,8:45,M/W,30,Winter,Writing
-342A,5:45,M/W,65,Autumn,Programming
-342A,5:45,M/W,45,Winter,Programming
-342A,3:30,M/W,45,Spring,Programming
-342B,8:00,M/W,65,Autumn,Programming
-342B,8:00,M/W,45,Winter,Programming
-342B,8:00,T/TH,45,Spring,Programming
-343A,3:30,M/W,60,Autumn,Programming
-343A,3:30,M/W,60,Winter,Programming
-343A,3:30,M/W,45,Spring,Programming
-343B,8:00,M/W,60,Winter,Programming
-350A,3:30,T/Th,60,Winter,Software Engineering
-350A,5:45,T/Th,45,Spring,Software Engineering
-350B,1:15,T/Th,60,Winter,Software Engineering
-360A,1:15,M/W,45,Autumn,Software Engineering
-360A,3:30,T/Th,45,Winter,Software Engineering
-360A,5:45,M/W,45,Spring,Software Engineering
-360B,5:45,T/Th,45,Autumn,Software Engineering
-360B,5:45,T/Th,45,Winter,Software Engineering
-360C,3:30,T/Th,45,Autumn,Software Engineering
-370A,1:15,M/W,60,Winter,Software Engineering
-370A,3:30,T/Th,45,Spring,Software Engineering
-370B,5:45,T/Th,60,Winter,Software Engineering
-422A,3:30,M/W,45,Autumn,Hardware
-422A,5:45,M/W,45,Spring,Hardware
-422B,3:30,T/Th,45,Autumn,Hardware
-422B,1:15,T/Th,45,Spring,Hardware
-427A,5:45,M/W,15,Winter,Computer Engineering
-427A Lab,2:30-5:30,F,15,Winter,Computer Engineering
-427B,5:45,M/W,15,Winter,Computer Engineering
-427B Lab,2:30-5:30,F,15,Winter,Computer Engineering
-428,5:45,M/W,45,Spring,Computer Engineering
-428,5:45,M/W,45,Spring,Computer Engineering
-428,5:45,M/W,45,Spring,Computer Engineering
-428,5:45,M/W,45,Spring,Computer Engineering
-428,5:45,M/W,45,Spring,Computer Engineering
-428,5:45,M/W,45,Spring,Computer Engineering
-428 Lab,2:30-5:30,F,45,Spring,Hardware
-430 A,3:30,M/W,45,Autumn,Operating Systems
-430A,8:00,M/W,45,Spring,Operating Systems
-430B,1:15,T/Th,45,Spring,Operating Systems
-490A,1:15,M/W,45,Spring,Capstone
-490A,3:30,M/W,45,Autumn,Capstone
-490A,3:30,M/W,45,Autumn,Capstone
-490A,3:30,M/W,45,Autumn,Capstone
-490A,3:30,M/W,45,Autumn,Capstone
-490A,11:00,T/TH,45,Winter,Capstone
-490B,8:00,M/W,20,Autumn,Capstone
-490B,3:30,M/W,45,Spring,Capstone
-490B,8:00,M/W,45,Winter,Capstone
-490C,8:00,T/Th,45,Autumn,Capstone
-490D,5:45,TTh,45,Autumn,Capstone
-501A,6-7:40,M/W,30,Autumn,Programming
-501B,6-7:40,T/TH,30,Autumn,Programming
-502A,6-7:40,M/W,30,Winter,Programming
-502B,6-7:40,T/TH,30,Winter,Programming
-503A,6-7:40,M/W,30,Spring,Programming
-503B,6-7:40,T/TH,30,Spring,Programming
-506A,8:00,M,30,Autumn,Software Engineering
-506B,8:00,T,30,Autumn,Software Engineering
-507A,8:00,M,30,Winter,Software Engineering
-507B,8:00,T,30,Winter,Software Engineering
-508A,8:00,M,30,Spring,Software Engineering
-508B,8:00,T,30,Spring,Software Engineering
-590,5:45,T/TH,30,Spring,Capstone
-590,5:45,T/TH,30,Autumn,Capstone
-BCUSP161,8:45,T/Th,45,Autumn,Programming
-BCUSP161,8:45,T/Th,45,Winter,Programming
-BCUSP161,8:45,T/Th,45,Spring,Programming
-SKL161,2:30-5:00,Tu,30,Summer,Programming
-SKL161A,8:45-11:15,F,45,Autumn,Programming
-SKL161A,8:45-11:15,F,45,Winter,Programming
-SKL161A,8:45-11:15,F,45,Spring,Programming
-SKL161B,11:30-2:00,F,45,Autumn,Programming
-SKL161B,11:30-2:00,F,45,Winter,Programming
-SKL161B,11:30-2:00,F,45,Spring,Programming
-SKL161C,11:30-2:00,F,45,Winter,Programming
-SKL161C,5:45-8:15,Tu,45,Spring,Programming
-SKL162,6:00-8:30,Tu,30,Summer,Programming
-SKL162A,2:30-5:00,F,45,Autumn,Programming
-SKL162A,2:15-4:45,F,45,Winter,Programming
-SKL162A,2:15-4:45,F,45,Spring,Programming
-SKL162B,3:30-6:00,Tu,45,Autumn,Programming
-SKL162B,5:45-8:15,Tu,45,Winter,Programming
-SKL162B,5:45-8:15,Th,45,Spring,Programming
-SKL509,8:00,Th,30,Autumn,Software Engineering
-SKL509,8:00,T,10,Winter,Software Engineering
-SKL509,8:00,T,10,Spring,Software Engineering
-SKL510,8:00,Th,10,Winter,Software Engineering
-SKL510,8:00,Th,10,Spring,Software Engineering
+107	8:45	T/Th	45	Autumn	Programming
+107	1:15	T/Th	45	Winter	Programming
+107	1:15	T/Th	45	Spring	Programming
+161	2:30-4:50	M/W	30	Summer	Programming
+162	6:00-8:20	M/W	30	Summer	Programming
+211	3:30	M/W	45	Winter	Teaching
+225	3:30	T/Th	30	Spring	Hardware
+290	3:30	W	10	Winter	Teaching
+295	1:15	W	10	Autumn	Teaching
+295	1:15	W	10	Winter	Teaching
+295	1:15	W	10	Spring	Teaching
+301	9:00-11:20	MW	30	Summer	Writing
+310	8:00	M/W	45	Autumn	Cybersecurity
+332	1:15-5:15	F	90	Autumn	Programming
+332	1:15-5:15	F	90	Winter	Programming
+332	1:15-5:15	F	90	Spring	Programming
+337	5:45	M/W	45	Winter	Cybersecurity
+341	1:15	T/Th	45	Autumn	Programming
+350	3:30	T/Th	60	Autumn	Software Engineering
+370	5:45	M/W	60	Autumn	Software Engineering
+371	5:45	T/Th	45	Autumn	Teaching
+371	5:45	T/Th	45	Spring	Teaching
+383	3-Jan	F	45	Autumn	Databases
+385	3:30	T/Th	45	Spring	Programming
+411	1:15	M/W	45	Spring	Teaching
+415	3:30	TTh	45	Spring	Cybersecurity
+421	5:45	T/Th	20	Winter	Hardware
+422	3:30	T/Th	45	Winter	Hardware
+430	11:45-2:05	MW	10	Summer	Operating Systems
+430	3:30	M/W	60	Winter	Operating Systems
+432	5:45	T/Th	45	Winter	Networking
+432	5:45	T/Th	45	Spring	Networking
+434	3:30	M/W	45	Spring	Programming
+448	8:00	T/Th	45	Spring	Programming
+451	3:30	T/Th	45	Winter	Graphics
+455	3:30	T/Th	45	Autumn	Scientific Computing
+457	11:00	M/W	45	Autumn	Programming
+458	8:00	M/W	45	Spring	Scientific Computing
+473	5:45	T/Th	45	Winter	Teaching
+474	5:45	T/Th	45	Autumn	Software Engineering
+475	6:00-8:20	M	60	Summer	Databases
+475	5:45	M/W	45	Autumn	Databases
+475	1:15	M/W	45	Winter	Databases
+475	3:30	M/W	45	Spring	Databases
+480	5:45	M/W	45	Spring	Software Engineering
+490	6:00-8:20	M/W	45	Summer	Capstone
+495				Summer	Capstone
+496	5:45	M/W	10	Spring	Capstone
+497				Summer	Capstone
+497				Autumn	Capstone
+497				Winter	Capstone
+497				Spring	Capstone
+498				Summer	Capstone
+498				Autumn	Capstone
+498				Winter	Capstone
+498				Spring	Capstone
+499				Summer	Capstone
+499				Autumn	Capstone
+499				Autumn	Capstone
+499				Winter	Capstone
+499				Winter	Capstone
+499				Spring	Capstone
+499				Spring	Capstone
+514	8:00	W	30	Winter	Cybersecurity
+515	8:00	T	30	Autumn	Cybersecurity
+517	5:45	M/W	30	Autumn	Software Engineering
+519	5:45	T/Th	30	Spring	Software Engineering
+527	8:00	M/W	30	Autumn	Cybersecurity
+533	5:45	T/TH	30	Autumn	Programming
+537	8:00	T/Th	30	Winter	Cybersecurity
+538	5:45	M/W	30	Winter	Cybersecurity
+539	8:00	M/W	30	Spring	Cybersecurity
+552	8:00	M/W	30	Winter	Graphics
+553	5:45	M/W	30	Spring	Software Engineering
+555	5:45	M/W	30	Winter	Software Engineering
+565	5:45	T/TH	30	Winter	Software Engineering
+566	8:00	M/W	30	Spring	Software Engineering
+572	8:00	T/TH	30	Autumn	Software Engineering
+577	5:45	T/Th	30	Winter	Software Engineering
+578	8:00	T/Th	30	Spring	Cybersecurity
+579	5:45	M/W	30	Autumn	Cybersecurity
+590	6:00-8:20	T/Th	30	Summer	Capstone
+590				Autumn	Capstone
+593				Winter	Capstone
+593				Spring	Capstone
+595				Winter	Capstone
+595				Spring	Capstone
+161A	11:00	M/W	45	Autumn	Programming
+161A	3:30	M/W	45	Winter	Programming
+161A	11:00	M/W	45	Spring	Programming
+161B	1:15	M/W	45	Autumn	Programming
+161B	11:00	M/W	45	Winter	Programming
+161B	3:30	M/W	45	Spring	Programming
+161C	8:45	M/W	45	Winter	Programming
+161C	8:00	M/W	45	Spring	Programming
+162A	1:15	T/Th	45	Autumn	Programming
+162A	11:00	T/Th	45	Winter	Programming
+162A	1:15	M/W	45	Spring	Programming
+162B	5:45	T/Th	45	Autumn	Programming
+162B	5:45	M/W	45	Winter	Programming
+162B	5:45	M/W	45	Spring	Programming
+205/405	4:15-5:05	Tu	20	Autumn	Teaching
+205/405	3:30-4:20	M	20	Winter	Teaching
+205/405	1:15-2:05	Th	20	Spring	Teaching
+301A	1:15	T/Th	30	Winter	Writing
+301A	1:15	T/Th	30	Spring	Writing
+301A,D	11:00	T/TH	60	Autumn	Writing
+301B	5:45	T/Th	30	Autumn	Writing
+301B	1:15	T/Th	30	Winter	Writing
+301B	3:30	T/Th	30	Spring	Writing
+301C	5:45	T/Th	30	Autumn	Writing
+301C	8:45	M/W	30	Winter	Writing
+342A	5:45	M/W	65	Autumn	Programming
+342A	5:45	M/W	45	Winter	Programming
+342A	3:30	M/W	45	Spring	Programming
+342B	8:00	M/W	65	Autumn	Programming
+342B	8:00	M/W	45	Winter	Programming
+342B	8:00	T/TH	45	Spring	Programming
+343A	3:30	M/W	60	Autumn	Programming
+343A	3:30	M/W	60	Winter	Programming
+343A	3:30	M/W	45	Spring	Programming
+343B	8:00	M/W	60	Winter	Programming
+350A	3:30	T/Th	60	Winter	Software Engineering
+350A	5:45	T/Th	45	Spring	Software Engineering
+350B	1:15	T/Th	60	Winter	Software Engineering
+360A	1:15	M/W	45	Autumn	Software Engineering
+360A	3:30	T/Th	45	Winter	Software Engineering
+360A	5:45	M/W	45	Spring	Software Engineering
+360B	5:45	T/Th	45	Autumn	Software Engineering
+360B	5:45	T/Th	45	Winter	Software Engineering
+360C	3:30	T/Th	45	Autumn	Software Engineering
+370A	1:15	M/W	60	Winter	Software Engineering
+370A	3:30	T/Th	45	Spring	Software Engineering
+370B	5:45	T/Th	60	Winter	Software Engineering
+422A	3:30	M/W	45	Autumn	Hardware
+422A	5:45	M/W	45	Spring	Hardware
+422B	3:30	T/Th	45	Autumn	Hardware
+422B	1:15	T/Th	45	Spring	Hardware
+427A	5:45	M/W	15	Winter	Computer Engineering
+427A Lab	2:30-5:30	F	15	Winter	Computer Engineering
+427B	5:45	M/W	15	Winter	Computer Engineering
+427B Lab	2:30-5:30	F	15	Winter	Computer Engineering
+428 	5:45	M/W	45	Spring	Computer Engineering
+428 	5:45	M/W	45	Spring	Computer Engineering
+428 	5:45	M/W	45	Spring	Computer Engineering
+428 	5:45	M/W	45	Spring	Computer Engineering
+428 	5:45	M/W	45	Spring	Computer Engineering
+428 	5:45	M/W	45	Spring	Computer Engineering
+428 Lab	2:30-5:30	F	45	Spring	Hardware
+430 A	3:30	M/W	45	Autumn	Operating Systems
+430A	8:00	M/W	45	Spring	Operating Systems
+430B	1:15	T/Th	45	Spring	Operating Systems
+490A	1:15	M/W	45	Spring	Capstone
+490A	3:30	M/W	45	Autumn	Capstone
+490A	3:30	M/W	45	Autumn	Capstone
+490A	3:30	M/W	45	Autumn	Capstone
+490A	3:30	M/W	45	Autumn	Capstone
+490A	11:00	T/TH	45	Winter	Capstone
+490A	11:00	T/TH	45	Winter	Capstone
+490A	11:00	T/TH	45	Winter	Capstone
+490A	11:00	T/TH	45	Winter	Capstone
+490A	11:00	T/TH	45	Winter	Capstone
+490A	11:00	T/TH	45	Winter	Capstone
+490A	11:00	T/TH	45	Winter	Capstone
+490A	11:00	T/TH	45	Winter	Capstone
+490B	8:00	M/W	20	Autumn	Capstone
+490B	3:30	M/W	45	Spring	Capstone
+490B	8:00	M/W	45	Winter	Capstone
+490B	8:00	M/W	45	Winter	Capstone
+490B	8:00	M/W	45	Winter	Capstone
+490B	8:00	M/W	45	Winter	Capstone
+490B	8:00	M/W	45	Winter	Capstone
+490B	8:00	M/W	45	Winter	Capstone
+490B	8:00	M/W	45	Winter	Capstone
+490B	8:00	M/W	45	Winter	Capstone
+490B	8:00	M/W	45	Winter	Capstone
+490C	8:00	T/Th	45	Autumn	Capstone
+490D	5:45	TTh	45	Autumn	Capstone
+501A	6-7:40	M/W	30	Autumn	Programming
+501B	6-7:40	T/TH	30	Autumn	Programming
+502A	6-7:40	M/W	30	Winter	Programming
+502B	6-7:40	T/TH	30	Winter	Programming
+503A	6-7:40	M/W	30	Spring	Programming
+503B	6-7:40	T/TH	30	Spring	Programming
+506A	8:00	M	30	Autumn	Software Engineering
+506B	8:00	T	30	Autumn	Software Engineering
+507A	8:00	M	30	Winter	Software Engineering
+507B	8:00	T	30	Winter	Software Engineering
+508A	8:00	M	30	Spring	Software Engineering
+508B	8:00	T	30	Spring	Software Engineering
+590	5:45	T/TH	30	Spring	Capstone
+590	5:45	T/TH	30	Spring	Capstone
+590	5:45	T/TH	30	Spring	Capstone
+590	5:45	T/TH	30	Spring	Capstone
+590	5:45	T/TH	30	Spring	Capstone
+590	5:45	T/TH	30	Spring	Capstone
+590	5:45	T/TH	30	Spring	Capstone
+590	5:45	T/TH	30	Spring	Capstone
+590	5:45	T/TH	30	Spring	Capstone
+590	5:45	T/TH	30	Spring	Capstone
+590	5:45	T/TH	30	Autumn	Capstone
+590	5:45	T/TH	30	Autumn	Capstone
+590	5:45	T/TH	30	Autumn	Capstone
+590	5:45	T/TH	30	Autumn	Capstone
+590	5:45	T/TH	30	Autumn	Capstone
+590	5:45	T/TH	30	Autumn	Capstone
+590	5:45	T/TH	30	Autumn	Capstone
+590	5:45	T/TH	30	Autumn	Capstone
+590	5:45	T/TH	30	Autumn	Capstone
+590	5:45	T/TH	30	Autumn	Capstone
+590	5:45	T/TH	30	Autumn	Capstone
+590	5:45	T/TH	30	Autumn	Capstone
+590	5:45	T/TH	30	Autumn	Capstone
+590	5:45	T/TH	30	Autumn	Capstone
+BCUSP161	8:45	T/Th	45	Autumn	Programming
+BCUSP161	8:45	T/Th	45	Winter	Programming
+BCUSP161	8:45	T/Th	45	Spring	Programming
+SKL161	2:30-5:00	Tu	30	Summer	Programming
+SKL161A	8:45-11:15	F	45	Autumn	Programming
+SKL161A	8:45-11:15	F	45	Winter	Programming
+SKL161A	8:45-11:15	F	45	Spring	Programming
+SKL161B	11:30-2:00	F	45	Autumn	Programming
+SKL161B	11:30-2:00	F	45	Winter	Programming
+SKL161B	11:30-2:00	F	45	Spring	Programming
+SKL161C	11:30-2:00	F	45	Winter	Programming
+SKL161C	5:45-8:15	Tu	45	Spring	Programming
+SKL162	6:00-8:30	Tu	30	Summer	Programming
+SKL162A	2:30-5:00	F	45	Autumn	Programming
+SKL162A	2:15-4:45	F	45	Winter	Programming
+SKL162A	2:15-4:45	F	45	Spring	Programming
+SKL162B	3:30-6:00	Tu	45	Autumn	Programming
+SKL162B	5:45-8:15	Tu	45	Winter	Programming
+SKL162B	5:45-8:15	Th	45	Spring	Programming
+SKL509	8:00	Th	30	Autumn	Software Engineering
+SKL509	8:00	T	10	Winter	Software Engineering
+SKL509	8:00	T	10	Spring	Software Engineering
+SKL510	8:00	Th	10	Winter	Software Engineering
+SKL510	8:00	Th	10	Spring	Software Engineering

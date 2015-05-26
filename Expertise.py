@@ -19,5 +19,5 @@ class Expertise(object):
         target_title = course.title
         found_abstract = False
         for ab_course in self.abstract_courses:
-            if target_title in ab_course.name and not found_abstract:
+            if target_title in ab_course.name and ab_course.name in target_title and not found_abstract:
                 ab_course.remove(course)

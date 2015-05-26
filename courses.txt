@@ -20,7 +20,7 @@
 370	5:45	M/W	60	Autumn	Software Engineering
 371	5:45	T/Th	45	Autumn	Teaching
 371	5:45	T/Th	45	Spring	Teaching
-383	3-Jan	F	45	Autumn	Databases
+383	3:00	F	45	Autumn	Databases
 385	3:30	T/Th	45	Spring	Programming
 411	1:15	M/W	45	Spring	Teaching
 415	3:30	TTh	45	Spring	Cybersecurity

@@ -77,4 +77,3 @@ def TestCourseCruncher():
     
 TestCourse("332	1:15-5:15	F	90	Winter	Programming")
 TestTeacher("Carnesale	Y	5	1	Programming	Software Engineering	Operating Systems")
-TestCourseCruncher()

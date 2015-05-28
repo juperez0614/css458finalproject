@@ -5,8 +5,8 @@ class Time(object):
         self.quarter = quarter
         self.day = day
         self.time = self.generate_time(time)
-        self.start = time[0]
-        self.end = time[1]
+        self.start = self.time[0]
+        self.end = self.time[1]
      
            
     def generate_time(self, time):
@@ -31,7 +31,6 @@ class Time(object):
             split_d2 = split_dash[1]
             split_col1 = split_d1.split(":")
             split_col2 = split_d2.split(":")
-            #print (split_col1)
             if split_col1[0] == "":
                 start = 0.00
             elif len(split_col1) == 2:
@@ -50,17 +49,3 @@ class Time(object):
                 elif end < start:
                     end = end + 12.0
         return [start, end]
-    
-    def has_conflict_with(self, other):
-        """Pre : Another time object is passed
-        
-        Post : True is returned if there is no scheduling conflict with the 
-        time of the course passed and the time of the course this method was 
-        called on. Fale is returned otherwise"""
-        if self.quarter == other.quarter and (self.day in other.day or other.day in self.day):
-            if self.start > other.end or self.end < other.start:
-                return True
-            else:
-                return False
-        else:
-            return True

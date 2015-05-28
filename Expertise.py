@@ -4,6 +4,7 @@ from AbstractCourse import AbstractCourse
 class Expertise(object):
     def __init__(self, expertise, course):
         self.expertise = expertise
+        ''' all belong to the expertise in the expertise'''
         self.abstract_courses = [AbstractCourse(course)]
     
     def add(self, course):

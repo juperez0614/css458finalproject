@@ -1,9 +1,15 @@
 from Expertise import Expertise
 from AbstractCourse import AbstractCourse
+import Course
+from Teacher import Teacher
+import os
+
 
 class CourseCruncher(object):
     def __init__(self):
         self.expertises = [] 
+        ''' types of expertises
+        ''' 
         self.abstract_courses = []
         self.courses = []
         self.expertise_types = []
@@ -40,10 +46,10 @@ class CourseCruncher(object):
                 counts.append(len(ab_course.ind_courses))
         return counts, course_names
         
-    def get_expertise(self, name):
+    def get_expertise(self, teacher):
         """Gives all individual (NOt Abstract) courses that have this expertise"""
-        for expertise in self.expertises:
-            if name in expertise.expertise:
+        for expertise in teacher.exp:
+            if expertise == expertise.expertise:
                 temp_courses = []
                 for ab_course in expertise.abstract_courses:
                     for course in ab_course.ind_courses:
@@ -65,13 +71,29 @@ class CourseCruncher(object):
     def print_expertise(self):
         for exp in self.expertises:
             print (exp.expertise)
+            
+    def get_quarter(self, quarter, courses):
+        temp_courses = []
+        for course in courses:
+            if quarter in course.time.quarter:
+                        temp_courses.append(ind_course)
+        return temp_courses
+    
+    def get_sorted_by_quarter(self, courses):
+        quarters = []
+        quarters.append(self.get_quarter("Summer", courses))
+        quarters.append(self.get_quarter("Autumn", courses))
+        quarters.append(self.get_quarter("Winter", courses))
+        quarters.append(self.get_quarter("Spring", courses))
+        return quarters
+    
         
 def openData():
     #data = open(os.getcwd() + '/courses.txt', 'r')
-    data = open('/Users/Will/Downloads/courses.txt', 'r')
+    data = open(os.getcwd() + '/courses.txt', 'r')
     individual_lines = data.readlines()
     cruncher = CourseCruncher()
     for line in individual_lines:
-        course = Course(line.split(","))
+        course = Course.Course(line.split('\t'))
         cruncher.add(course)
     return cruncher 

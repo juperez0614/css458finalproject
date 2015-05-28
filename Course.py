@@ -1,6 +1,7 @@
 import os
-from CourseCruncher import CourseCruncher
+#from CourseCruncher import CourseCruncher
 from Expertise import Expertise
+from Time import Time
 
 """This is the individual course object, ie: a specific course. It
 stores the following
@@ -21,7 +22,7 @@ class Course(object):
         self.name = self.deconstruct_name(values[0])
         self.title = self.name[0]
         self.section = self.name[1]
-        #self.time = Time(values[2], values[1], values[4])
+        self.time = Time(values[2], values[1], values[4])
         self.capacity = values[3]
         self.expertise = values[5]
      
@@ -51,14 +52,16 @@ class Course(object):
 
     def has_conflict_with(self, other):
         """Uses time objects to see if courses have time conflicts
+        if there is a conflict true
+        false if no conflict
         """
         return self.time.has_conflict_with(other.time)
     
-def openData():
+"""def openData():
     data = open(os.getcwd() + '/courses.txt', 'r')
     individual_lines = data.readlines()
     cruncher = CourseCruncher()
     for line in individual_lines:
         course = Course(line.split("\t")) 
         cruncher.add(course)
-    return cruncher
+    return cruncher"""

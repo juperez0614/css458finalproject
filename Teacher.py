@@ -1,6 +1,8 @@
 """This defines a teacher object"""
 import os
 import CourseCruncher
+
+
 class Teacher(object):
     
     def __init__(self, vals):
@@ -18,14 +20,12 @@ class Teacher(object):
         self.totalexp = self.exp[0] + "," + self.exp[1] + "," + self.exp[2]
         self.satisfaction = 100
         
-        self.summer = []
-        self.fall = []
-        self.winter = []
-        self.spring = []
+        self.quarters = [4]
         self.courses = []
         
         
-    def addClass(self, course):
+    def addClass(self, course, quarter):
+        self.quarters[quarter].append(course)
         self.courses.append(course)
         self.classes = self.classes - 1
         
@@ -34,7 +34,7 @@ class Teacher(object):
         if self.fulltime:
             return 85000
         else:
-            return 1000 * len(courses)
+            return 4000 * len(courses)
     
 def openData():
     teachers = []

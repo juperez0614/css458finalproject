@@ -49,3 +49,17 @@ class Time(object):
                 elif end < start:
                     end = end + 12.0
         return [start, end]
+    
+    def has_conflict_with(self, other):
+        """Pre : Another time object is passed
+        
+        Post : True is returned if there is no scheduling conflict with the 
+        time of the course passed and the time of the course this method was 
+        called on. Fale is returned otherwise"""
+        if self.quarter == other.quarter and (self.day in other.day or other.day in self.day):
+            if self.start > other.end or self.end < other.start:
+                return True
+            else:
+                return False
+        else:
+            return True

@@ -1,6 +1,7 @@
 from Teacher import Teacher
 from Course import Course
 from Expertise import Expertise
+import CourseCruncher
 import os
 
 def TestAbstractCourse(abstractCourseString):
@@ -64,5 +65,16 @@ def TestTeacher(teacherString):
         
     print "Test finished"
     
+def TestCourseCruncher():
+    cruncher = CourseCruncher.CourseCruncher()
+    data = open('E:\Github\css458finalproject\courses.txt', 'r')
+    individual_lines = data.readlines()
+    for line in individual_lines:
+        course = Course(line.split('\t'))
+        cruncher.add(course)
+    for c in cruncher.abstract_courses:
+        print c.name + " " + str(len(c.ind_courses))
+    
 TestCourse("332	1:15-5:15	F	90	Winter	Programming")
 TestTeacher("Carnesale	Y	5	1	Programming	Software Engineering	Operating Systems")
+TestCourseCruncher()

@@ -66,3 +66,12 @@ def TestTeacher(teacherString):
     
 TestCourse("332	1:15-5:15	F	90	Winter	Programming")
 TestTeacher("Carnesale	Y	5	1	Programming	Software Engineering	Operating Systems")
+
+"""for c in cruncher.courses:
+    print c.title
+summer = cruncher.get_quarter("Autumn")
+for course in summer:
+    print course.title"""
+softE = cruncher.get_expertise("Software Engineering")
+for course in softE:
+    print course.title

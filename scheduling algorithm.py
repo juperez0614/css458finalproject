@@ -4,6 +4,7 @@ the excel files provided by Prof Lin"""
 import numpy as N
 import numpy.random as R  
 import os
+import CourseCruncher
 import Course 
 import Teacher 
 import AbstractCourse
@@ -11,14 +12,75 @@ import AbstractCourse
 
     #courses.append(Course(line.split("\t")))
     #print (line.split("\t")) 
+teachers = Teacher.openData()
+cruncher = CourseCruncher.openData()
+print (cruncher)
+"""for c in cruncher.courses:
+    print c.title"""
+summer = cruncher.get_quarter("Summer")
+for course in summer:
+    print (course.title)
+"""softE = cruncher.get_expertise("Software Engineering")
+for course in softE:
+    print course.title"""
 
+for i in range(0, 8):
+    for teacher in teachers:
+        possible_courses = cruncher.get_expertise(teacher.exp[0])
+        R.shuffle(possible_courses)
+        course_added = False
+        for course in possible_courses:
+            if not course_added:
+                if len(teacher.courses) == 0:
+                        teacher.add(course)
+                        cruncher.remove(course)
+                        course_added = True
+                else:
+                    for teachers_course in teacher.courses:
+                        if not course_added and not teachers_course.has_conflict_with(course):
+                            teacher.add(course)
+                            cruncher.remove(course)
+                            course_added = True
+        if not course_added and not teacher.exp[1] == "":
+            possible_courses = cruncher.get_expertise(teacher.exp[1])
+            R.shuffle(possible_courses)
+            for course in possible_courses:
+                if len(teacher.courses) == 0:
+                        teacher.add(course)
+                        cruncher.remove(course)
+                        course_added= True
+                else:
+                    for teachers_course in teacher.courses:
+                        if not course_added and not teachers_course.has_conflict_with(course):
+                            teacher.add(course)
+                            cruncher.remove(course)
+                            course_added = True
+        if not course_added and not teacher.exp[2] == "":
+            possible_courses = cruncher.get_expertise(teacher.exp[2])
+            R.shuffle(possible_courses)
+            for course in possible_courses:
+                if len(teacher.courses) == 0:
+                        teacher.add(course)
+                        cruncher.remove(course)
+                        course_added = True
+                else:
+                    for teachers_course in teacher.courses:
+                        if not course_added and not teachers_course.has_conflict_with(course):
+                            teacher.add(course)
+                            cruncher.remove(course)
+                            course_added = True
+                          
+for t in teachers:
+    print (t.name)  
+    for c in t.courses:
+        print (c.name)
 
 '''
 Teachers Retiring/ quiting
 Random population growth (1% - 20%) Normal Distribution
 Teacher Class Rejection Rate (1% - 10%)
 keeping timeslots together
-'''
+
 def run_schedule(): 
 
     courses = []
@@ -140,4 +202,5 @@ for t in teachers:
 for u in spring:
     out.write(u.name + "\t" + str(u.time) + "\t" + u.days + "\t" + "Unassigned" + "\n")
              
-out.close()  
+out.close() 
+''' 

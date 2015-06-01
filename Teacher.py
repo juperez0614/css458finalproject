@@ -4,6 +4,8 @@ import CourseCruncher
 
 
 class Teacher(object):
+
+    
     
     def __init__(self, vals):
         self.name = vals[0]
@@ -17,24 +19,24 @@ class Teacher(object):
         self.exp.append(vals[4])
         self.exp.append(vals[5]) 
         self.exp.append(vals[6])
-        self.totalexp = self.exp[0] + "," + self.exp[1] + "," + self.exp[2]
         self.satisfaction = 100
-        
-        self.quarters = [4]
+        self.classQuarterCounter = 0
+        self.coursesTaught = 0
         self.courses = []
         
         
-    def addClass(self, course, quarter):
-        self.quarters[quarter].append(course)
+    def addClass(self, course):
         self.courses.append(course)
         self.classes = self.classes - 1
+        self.classQuarterCounter = self.classQuarterCounter -1
+        self.coursesTaught = self.coursesTaught + 1
         
         
     def yearly_sal(self):
         if self.fulltime:
             return 85000
         else:
-            return 4000 * len(courses)
+            return 4000 * len(self.courses)
     
 def openData():
     teachers = []

@@ -1,4 +1,6 @@
 import numpy.random as R
+import os
+from AbstractCourse import AbstractCourse
 """This defines a teacher object"""
 class Teacher(object):
     def __init__(self, vals):
@@ -34,7 +36,7 @@ class Teacher(object):
             return 1000 * len(self.courses)
 
 teachers = []
-data2 = open('/Users/Will/Desktop/faculty7.txt', 'r')
+data2 = data = open(os.getcwd() + '/faculty7.txt', 'r')
 individual_lines2 = data2.readlines()[4:]
 for line in individual_lines2:
     array = line.split("\t")
@@ -185,7 +187,7 @@ class Course(object):
         return self.time.has_conflict_with(other.time)
     
     def openData():
-        data = open(os.getcwd() + '/courses.txt', 'r')
+        data = open(os.getcwd() + '/courses7.txt', 'r')
         individual_lines = data.readlines()
         cruncher = CourseCruncher()
         for line in individual_lines:
@@ -253,11 +255,11 @@ class CourseCruncher(object):
         
     def print_abstract(self):
         for course in self.abstract_courses:
-            print course.name
+            print (course.name)
     
     def print_expertise(self):
         for exp in self.expertises:
-            print exp.expertise 
+            print (exp.expertise) 
             
     def get_quarter(self, quarter):
         temp_courses = []
@@ -277,8 +279,7 @@ class CourseCruncher(object):
         return quarters                                                                                      
 
 def openData():
-    #data = open(os.getcwd() + '/courses.txt', 'r')
-    data = open('/Users/Will/Desktop/courses2.txt', 'r')
+    data = open(os.getcwd() + '/courses.txt', 'r')
     individual_lines = data.readlines()
     cruncher = CourseCruncher()
     for line in individual_lines:
@@ -291,10 +292,15 @@ cruncher = openData()
     print c.title"""
 summer = cruncher.get_quarter("Summer")
 for course in summer:
-    print course.title
+    print (course.title)
 """softE = cruncher.get_expertise("Software Engineering")
 for course in softE:
     print course.title"""
+
+'''
+Starting population 
+'''
+
 
 for i in range(0, 8):
     for teacher in teachers:
@@ -342,7 +348,7 @@ for i in range(0, 8):
                             cruncher.remove(course)
                             course_added = True
                           
-"""for t in teachers:
-    print t.name  
+for t in teachers:
+    print (t.name)  
     for c in t.courses:
-        print c.name"""
+        print (c.name)

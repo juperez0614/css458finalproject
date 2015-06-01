@@ -1,14 +1,15 @@
 from Expertise import Expertise
 from AbstractCourse import AbstractCourse
 import Course
-from Teacher import Teacher
+import Teacher
 import os
 
 
 class CourseCruncher(object):
     def __init__(self):
         self.expertises = [] 
-        ''' types of expertises
+        ''' 
+        types of expertises
         ''' 
         self.abstract_courses = []
         self.courses = []
@@ -48,21 +49,24 @@ class CourseCruncher(object):
         
     def get_expertise(self, teacher):
         """Gives all individual (NOt Abstract) courses that have this expertise"""
-        for expertise in teacher.exp:
-            if expertise == expertise.expertise:
-                temp_courses = []
-                for ab_course in expertise.abstract_courses:
-                    for course in ab_course.ind_courses:
-                        temp_courses.append(course)
-                return temp_courses  
+        temp_courses = []
+        for course in self.courses:
+            for expert in teacher.exp:
+                if expert == course.expertise:
+                    temp_courses.append(course)
+        #print(len(temp_courses))
+        return temp_courses  
     
     def remove(self, course):
-        target_exp = course.expertise
+        self.courses.remove(course)
+        """target_exp = course.expertise
         found_exp = False
         for exp in self.expertises:
             if target_exp in exp.expertise and not found_exp:
+                print("removing course ", course.name)
                 exp.remove(course)
                 found_exp = True
+                break"""
         
     def print_abstract(self):
         for course in self.abstract_courses:
@@ -72,20 +76,21 @@ class CourseCruncher(object):
         for exp in self.expertises:
             print (exp.expertise)
             
-    def get_quarter(self, quarter, courses):
+    def get_quarter(self, quarter,courses):
         temp_courses = []
         for course in courses:
-            if quarter in course.time.quarter:
-                        temp_courses.append(ind_course)
+            if quarter == course.time.quarter:
+                        temp_courses.append(course)
+        #print(len(temp_courses))
         return temp_courses
-    
+        
     def get_sorted_by_quarter(self, courses):
         quarters = []
-        quarters.append(self.get_quarter("Summer", courses))
+        quarters.append(self.get_quarter("Summer",courses))
         quarters.append(self.get_quarter("Autumn", courses))
-        quarters.append(self.get_quarter("Winter", courses))
-        quarters.append(self.get_quarter("Spring", courses))
-        return quarters
+        quarters.append(self.get_quarter("Winter",courses))
+        quarters.append(self.get_quarter("Spring",courses))
+        return quarters                     
     
         
 def openData():
@@ -96,4 +101,5 @@ def openData():
     for line in individual_lines:
         course = Course.Course(line.split('\t'))
         cruncher.add(course)
+       # print(course.name)
     return cruncher 

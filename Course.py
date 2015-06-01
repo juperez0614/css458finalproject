@@ -25,6 +25,7 @@ class Course(object):
         self.time = Time(values[2], values[1], values[4])
         self.capacity = values[3]
         self.expertise = values[5]
+        self.isAdded = False;
      
     def deconstruct_name(self, name):
         """Pre :  A name stirng read from the excel data is passed
@@ -56,6 +57,9 @@ class Course(object):
         false if no conflict
         """
         return self.time.has_conflict_with(other.time)
+    
+    def addedToList(self):
+        self.isAdded = True
     
     """def openData():
         data = open(os.getcwd() + '/courses.txt', 'r')

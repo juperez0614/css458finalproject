@@ -39,6 +39,7 @@ class Teacher(object):
             return 4000 * len(self.courses)
     
 def openData(filePath):
+    """See faculty7.txt for the correct formatting of the file"""
     teachers = []
     data2 = open(filePath +'/faculty7.txt', 'r')
     individual_lines2 = data2.readlines()[4:]

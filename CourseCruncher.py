@@ -93,9 +93,8 @@ class CourseCruncher(object):
         return quarters                     
     
         
-def openData():
-    #data = open(os.getcwd() + '/courses.txt', 'r')
-    data = open(os.getcwd() + '/courses.txt', 'r')
+def openData(filePath):
+    data = open(filePath + '/courses.txt', 'r')
     individual_lines = data.readlines()
     cruncher = CourseCruncher()
     for line in individual_lines:

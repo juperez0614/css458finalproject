@@ -5,6 +5,13 @@ import Course
 import Teacher
 from AbstractCourse import AbstractCourse
 
+##################################################
+
+baseFilePath = "E:/Github/css458finalproject"
+yearsToRunSim = 10
+
+##################################################
+
 class simDriver(object):
     ssTeachersFull = []
     ssTeachersPart = []
@@ -22,12 +29,11 @@ class simDriver(object):
     coursesByQuarter = []
     
     def __init__(self):
-        self.startDriver = CourseCruncher.openData()
+        self.startDriver = CourseCruncher.openData(baseFilePath)
         self.startcourses = self.startDriver.courses
-        self.startteachers = Teacher.openData()
+        self.startteachers = Teacher.openData(baseFilePath)
         self.popStart = self.popStart * len(self.startcourses)
         
-    
     def coursesByQuarterYear(self):
         self.coursesByQuarter.append(self.coursesByQuarterSingle("Summer"))
         #print(len(self.coursesByQuarterSingle("Summer")))
@@ -35,8 +41,6 @@ class simDriver(object):
         self.coursesByQuarter.append(self.coursesByQuarterSingle("Winter"))
         self.coursesByQuarter.append(self.coursesByQuarterSingle("Spring"))
         
-        
-    
     def coursesByQuarterSingle(self, quarter):
         quarterList = []
         for course in self.startcourses:
@@ -44,7 +48,6 @@ class simDriver(object):
                 quarterList.append(course)
         return quarterList
          
-    
     def checkExpertise(self, course, teacher):
         for expert in teacher.exp:
             print(expert, course.expertise)
@@ -102,11 +105,6 @@ class simDriver(object):
             self.startcourses.append(course)
       
     def sim(self):
-        '''
-        happens above this
-        cruncher = CourseCruncher.openData()
-        teachers = Teacher.openData()
-        '''
         self.addCourses()    
         #reset beginnning of the year
         for teacher in self.startteachers:
@@ -210,7 +208,7 @@ class simDriver(object):
         
 
 drive = simDriver()
-for i in range(10):            
+for i in range(yearsToRunSim):            
     drive.sim()
     print (i)
     print("Cost: ", drive.ssCost[i])

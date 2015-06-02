@@ -38,9 +38,9 @@ class Teacher(object):
         else:
             return 4000 * len(self.courses)
     
-def openData():
+def openData(filePath):
     teachers = []
-    data2 = open(os.getcwd() +'/faculty7.txt', 'r')
+    data2 = open(filePath +'/faculty7.txt', 'r')
     individual_lines2 = data2.readlines()[4:]
     for line in individual_lines2:
         array = line.split("\t")
